@@ -1,0 +1,30 @@
+.grid {
+  display: grid;
+  grid-template-areas:
+    "mainGrid mainGrid mainGrid rightGrid"
+    "bottomGrid bottomGrid bottomGrid bottomGrid";
+  grid-gap: 10px;
+  padding: 10px;
+  background-color: var(--toggle-bg);
+}
+.mainGrid {
+  display: grid;
+  grid-area: mainGrid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+}
+.rightGrid {
+  display: grid;
+  grid-area: rightGrid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+}
+.bottomGrid {
+  display: grid;
+  grid-area: bottomGrid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+}
